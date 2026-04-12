@@ -1,11 +1,5 @@
 class Solution:
 
-    # a b c a b c b b
-
-    # 0  1  2  3  4  5  6  7  8
-    # a  b  c  c  a  b  q  r  c
-    #          ^
-
     @staticmethod
     def length_of_longest(s: str) -> int:
         char_dic: dict[str, int] = {}
