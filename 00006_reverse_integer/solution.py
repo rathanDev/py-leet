@@ -12,5 +12,9 @@ class Solution:
             temp = temp // 10            # 12  1     0
 
         if (neg):
-            return -rev
+            rev = -rev
+
+        if rev < -(2**31) or rev > (2**31 - 1):
+            return 0
+
         return rev
