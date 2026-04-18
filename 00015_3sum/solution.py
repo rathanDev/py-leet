@@ -5,13 +5,14 @@ class Solution:
         res: list[list[int]] = []
         nums.sort()
 
-        for i, n0 in enumerate(nums[:-2]):
+        for i in range(0, len(nums)-2):
 
             if (i>0) and (nums[i] == nums[i-1]):
                 continue
 
             start: int = i + 1
             end: int = len(nums)-1
+            n0: int = nums[i]
 
             while (start < end):
 

@@ -46,3 +46,9 @@ def test_two_elements(solution):
     res = solution.find_3_sum(nums)
     print(f"Nums: {nums} Res: {res}")
     assert res == []
+
+def test_all_0(solution):
+    nums: list[int] = [0, 0, 0]
+    res = solution.find_3_sum(nums)
+    print(f"Nums:{nums} Res:{res}")
+    assert res == [[0,0,0]]
